@@ -453,7 +453,7 @@ Interceptors can take several different forms:
 Webhook Interceptors allow users to configure an external k8s object which
 contains business logic. These are currently specified under the `Webhook`
 field, which contains an
-[`ObjectReference`](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.12/#objectreference-v1-core)
+[`ObjectReference`](https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/object-reference/)
 to a Kubernetes Service. If a Webhook Interceptor is specified, the
 `EventListener` sink will forward incoming events to the service referenced by
 the Interceptor over HTTP. The service is expected to process the event and
